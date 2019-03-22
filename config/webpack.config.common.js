@@ -55,7 +55,7 @@ module.exports = {
     modules: [path.resolve(__dirname, '../src'), 'node_modules'],
   },
   plugins: [new HtmlWebpackPlugin({
-    title: 'The Blog Pet Project',
+    title: 'React Gallery',
     filename: 'index.html',
     chunks: ['index'],
     template: './src/templates/index.html',
