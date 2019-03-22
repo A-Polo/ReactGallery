@@ -1,0 +1,8 @@
+plugins:
+  eslint:
+    enabled: true
+    extensions:
+      - .js
+      - .jsx
+  stylelint:
+      enabled: true
