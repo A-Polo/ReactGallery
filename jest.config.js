@@ -1,12 +1,11 @@
 module.exports = {
-  setupTestFrameworkScriptFile: '<rootDir>src/support/setupTests.js',
+  setupFilesAfterEnv: ['<rootDir>src/support/setupTests.js'],
   collectCoverage: true,
   coverageReporters: ['lcov'],
   coverageThreshold: {
     global: {
       branches: 80,
-      functions: 80,
-      lines: 80,
+      lines: 70,
       statements: -10,
     },
   },

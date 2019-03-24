@@ -1,11 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import injectSheet from 'react-jss';
 
-import './Button.scss';
+import styles from './styles';
 
-const Button = ({ children, onClick, disabled }) => (
+const Button = ({
+  children, onClick, disabled, classes,
+}) => (
   <button
-    className="Button"
+    className={classes.Button}
     disabled={disabled}
     onClick={onClick}
   >
@@ -15,6 +18,7 @@ const Button = ({ children, onClick, disabled }) => (
 
 Button.propTypes = {
   children: PropTypes.node.isRequired,
+  classes: PropTypes.instanceOf(Object).isRequired,
   onClick: PropTypes.func,
   disabled: PropTypes.bool,
 };
@@ -24,4 +28,4 @@ Button.defaultProps = {
   disabled: false,
 };
 
-export default Button;
+export default injectSheet(styles)(Button);

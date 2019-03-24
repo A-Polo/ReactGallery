@@ -1,23 +1,20 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Provider } from 'mobx-react';
-import injectSheet from 'react-jss';
-import styles from './styles';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+
 
 import RootStore from './stores';
+import transport from '../../lib/services/transport';
 import GalleyContent from './GalleyContent';
 
-const rootStore = new RootStore();
+const rootStore = new RootStore({ transport });
 
-const Gallery = ({ classes }) => (
+const Gallery = () => (
   <Provider store={rootStore}>
-    <GalleyContent classes={classes} />
+    <Router>
+      <Route component={GalleyContent} />
+    </Router>
   </Provider>
 );
 
-Gallery.propTypes = {
-  classes: PropTypes.instanceOf(Object).isRequired,
-};
-
-
-export default injectSheet(styles)(Gallery);
+export default Gallery;

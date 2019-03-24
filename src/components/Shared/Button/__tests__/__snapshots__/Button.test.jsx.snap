@@ -1,17 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`components/Button matches snapshot 1`] = `
-<button
-  className="Button"
+<Button
+  classes={
+    Object {
+      "Button": "Button-Button-0-1-1",
+    }
+  }
   disabled={false}
   onClick={
     [MockFunction] {
       "calls": Array [
         Array [],
       ],
+      "results": Array [
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+      ],
     }
   }
 >
   Click me
-</button>
+</Button>
 `;

@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Button matches snapshot 1`] = `
+<Thumbnail
+  classes={
+    Object {
+      "Album": "Thumbnail-Album-0-1-1",
+    }
+  }
+  onClick={
+    [MockFunction] {
+      "calls": Array [
+        Array [],
+      ],
+      "results": Array [
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+      ],
+    }
+  }
+  onKeyPress={
+    [MockFunction] {
+      "calls": Array [
+        Array [],
+      ],
+      "results": Array [
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+      ],
+    }
+  }
+>
+  <h2>
+    Title
+  </h2>
+  <img
+    alt="testAlt"
+    src="http://test.src"
+  />
+</Thumbnail>
+`;
