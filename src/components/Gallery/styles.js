@@ -8,4 +8,7 @@ export default {
     padding: [20],
     height: '100%',
   },
+  GalleryModalItem: {
+    textAlign: 'center',
+  },
 };
