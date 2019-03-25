@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const GalleryModalItem = ({ title, id, url }) => (
+const GalleryModalItem = ({ title, id, url, props, bla, bla, props, veryLongNameOfTheProps, fdsfdsfsdfdsfsdfsdsddsfdsdsfdsfsdsdffdsdsf}) => (
   <div>
     <h2>{title}</h2>
     <img key={id} src={url} alt={title} title={title} />
