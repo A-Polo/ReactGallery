@@ -10,7 +10,7 @@ const GalleryModalItem = ({ title, id, url }) => (
 
 GalleryModalItem.propTypes = {
   title: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired
   id: PropTypes.number.isRequired,
 };
 
